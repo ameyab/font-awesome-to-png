@@ -49,3 +49,18 @@ Export the asterisk icon as 32x32 pixels image, in blue:
 Export all icons as 16x16 pixels images:
 
     font-awesome-to-png.py ALL
+
+### Dependecies 
+This program depends on the Python Imaging Library (PIL). Please install the Pillow, the ‘friendly’ PIL fork by Alex Clark and Contributors (http://pillow.readthedocs.org/en/latest/index.html).
+
+__Mac OS X users__: Please note that the Apple LLVM compiler in Xcode 5.1 treats unrecognized command-line options as errors. This may cause an “clang: error: unknown argument” exception when building Pillow on Mac OS X 10.9x. 
+
+A workaround is to downgrade the  ARCHFLAGS environment variable to downgrade the error to a warning. 
+
+You can install Pillow using the following command should you run into the "clang: error: unknown argument" exception.
+
+    sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future pip install mitmproxy
+    
+__Reference__: [http://bruteforce.gr/bypassing-clang-error-unknown-argument.html] (http://bruteforce.gr/bypassing-clang-error-unknown-argument.html)
+
+
