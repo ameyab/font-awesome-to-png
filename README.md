@@ -59,7 +59,7 @@ A workaround is to downgrade the  ARCHFLAGS environment variable to downgrade th
 
 You can install Pillow using the following command should you run into the "clang: error: unknown argument" exception.
 
-    sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future pip install mitmproxy
+    sudo ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future pip install pillow
     
 __Reference__: [http://bruteforce.gr/bypassing-clang-error-unknown-argument.html] (http://bruteforce.gr/bypassing-clang-error-unknown-argument.html)
 
